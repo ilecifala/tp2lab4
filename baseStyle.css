@@ -25,9 +25,8 @@
   }
   
   textarea{
-    max-width: 450px;
-    min-height: 50px;
-    max-height: 200px;
+    resize: none;
+    min-height: 100px;
     margin-bottom: 5px; 
   }
     
@@ -48,6 +47,7 @@
     border: 1px solid #3ac162;
     border-width: 1px 1px 3px;
     box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    width: 250px;
   }
 
   button:hover{
@@ -82,7 +82,16 @@
 
   .input-checkbox, .input-radio{
     display: flex;
-    text-align: center;
+    height: auto;
+    align-items: center;
+    vertical-align: middle;
+    flex-wrap: wrap;
+  }
+
+  .input-button {
+    display: flex;
+    justify-content: center;
+
   }
 
   @media screen and (min-width: 500px) {

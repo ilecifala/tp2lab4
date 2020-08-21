@@ -12,17 +12,21 @@
             <h1>Contact Form</h1>
             <h3>Your basic info</h2>
             Name<br>
-            <input type="text" name="name">
+            <input type="text" name="name" required>
             <br>Email<br>
-            <input type="email" name="email">
+            <input type="email" name="email" required>
             <br>Password<br>
-            <input type="password" name="password">
+            <input type="password" name="password" required>
             <br>Birthday<br>
             <input type="date" name="birthday" placeholder="dd/mm/aaaa">
             <div class="input-radio">
-                <br>Sex: 
-                <input type="radio" name="gender" value="Male">Male
-                <input type="radio" name="gender" value="Female">Female
+                <span><br>Sex:</span>
+                <label>
+                    <input type="radio" name="gender" value="Male">Male
+                </label> 
+                <label>
+                    <input type="radio" name="gender" value="Female">Female
+                </label>
             </div>
             <h3>Your profile</h3>
             About you<br>
@@ -36,12 +40,25 @@
             </select>
             <br>Interests<br>
             <div class="input-checkbox">
-                <input type="checkbox" name="interest1" value="database">Data Base
-                <input type="checkbox" name="interest2" value= "design">Design
-                <input type="checkbox" name="interest3" value="business">Business 
-                <input type="checkbox" name="interest4" value="unit test">Unit Test
-                <input type="checkbox" name="interest5" value="cloud development">Cloud Development
-                <input type="checkbox" name="interest6" value="web development">Web Development
+
+                <label>
+                   <input type="checkbox" name="interest1" value="database">Data Base 
+                </label>
+                <label>
+                   <input type="checkbox" name="interest2" value= "design">Design 
+                </label>
+                <label>
+                  <input type="checkbox" name="interest3" value="business">Business   
+                </label>
+                <label>
+                   <input type="checkbox" name="interest4" value="unit test">Unit Test 
+                </label>
+                <label>
+                  <input type="checkbox" name="interest5" value="cloud development">Cloud Development  
+                </label>
+                <label>
+                   <input type="checkbox" name="interest6" value="web development">Web Development 
+                </label>
             </div>
             <br>
             <div class="input-button">
