@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='./baseStyle.css'>
+</head>
+<body>
+    <div class='contact-form'>
+        <form action='./action.php' method="post">
+            <h1>Contact Form</h1>
+            <h3>Your basic info</h2>
+            Name<br>
+            <input type="text" name="name">
+            <br>Email<br>
+            <input type="email" name="email">
+            <br>Password<br>
+            <input type="password" name="password">
+            <br>Birthday<br>
+            <input type="date" name="birthday" placeholder="dd/mm/aaaa">
+            <div class="input-radio">
+                <br>Sex: 
+                <input type="radio" name="gender" value="Male">Male
+                <input type="radio" name="gender" value="Female">Female
+            </div>
+            <h3>Your profile</h3>
+            About you<br>
+            <textarea>
+
+            </textarea>
+            <br>Role<br>
+            <select name="roles">
+                <option value="front-end developer">Front-end Developer</option>
+                <option value="back-end developer">Back-end Developer</option>
+            </select>
+            <br>Interests<br>
+            <div class="input-checkbox">
+                <input type="checkbox" name="interest1" value="database">Data Base
+                <input type="checkbox" name="interest2" value= "design">Design
+                <input type="checkbox" name="interest3" value="business">Business 
+                <input type="checkbox" name="interest4" value="unit test">Unit Test
+                <input type="checkbox" name="interest5" value="cloud development">Cloud Development
+                <input type="checkbox" name="interest6" value="web development">Web Development
+            </div>
+            <br>
+            <div class="input-button">
+                <button type="submit">Send</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
