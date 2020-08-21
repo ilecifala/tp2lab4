@@ -11,10 +11,19 @@
   }
   
   form {
+    background-image: -webkit-repeating-radial-gradient(center center, #FFB4BF, #FFB4BF 1px, transparent 1px, transparent 100%);
+    background-image: -moz-repeating-radial-gradient(center center, #FFB4BF, #FFB4BF 1px, transparent 1px, transparent 100%);
+    background-image: -ms-repeating-radial-gradient(center center, #FFB4BF, #FFB4BF 1px, transparent 1px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, #FFB4BF, #FFB4BF 1px, transparent 1px, transparent 100%);
+    -webkit-background-size: 3px 3px;
+    -moz-background-size: 3px 3px;
+    background-size: 7px 7px;
+    
+
     display: flex;
     flex-direction: column;
     width: 500px;
-    background: #ffffff;
+    padding: 15px;
     border: 2px solid rgba(0, 0, 0, 0.2);
     border-radius: 8px;
   }
@@ -22,6 +31,10 @@
   h1 {
     margin: 0 0 10px 0;
     text-align: center;
+  }
+
+  h3 {
+    margin: 10px 0;
   }
   
   textarea{
@@ -42,12 +55,15 @@
   button {
     padding: 19px 39px 18px 39px;
     font-size: 18px;
+    color: white;
     font-style: normal;
     border-radius: 5px;
+    background-color: #4ccf73;
     border: 1px solid #3ac162;
     border-width: 1px 1px 3px;
     box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
     width: 250px;
+    margin:2px;
   }
 
   button:hover{
@@ -62,16 +78,16 @@
   .number {
     height: 30px;
     width: 30px;
+    background: #4ccf73;
+    opacity: 80%;
+    border-radius: 100%;
+    color: white;
     display: inline-block;
     font-size: 0.8em;
     margin-right: 4px;
     line-height: 30px;
     text-align: center;
     text-shadow: 0 1px 0 rgba(255,255,255,0.2);
-  }
-
-  form {
-    padding: 15px;
   }
 
   .contact-form{
@@ -88,9 +104,19 @@
     flex-wrap: wrap;
   }
 
+  .input-radio span {
+    //alinear texto
+  }
+
   .input-button {
     display: flex;
     justify-content: center;
+
+  }
+
+  .your-profile, .basic-info {
+    display: flex;
+    align-items: center;
 
   }
 
